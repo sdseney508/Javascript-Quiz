@@ -1,4 +1,6 @@
 # Javascript-Quiz
+![image](https://user-images.githubusercontent.com/62141103/149639858-8b81fd77-1663-40b6-8d55-7fbe47890ba9.png)
+
 
 ## Description
 Generates a random 25 question javascript quiz based on a stored question bank.  Quiz stores the local users high scores wrt correct answers and time remaining when they finish.  
