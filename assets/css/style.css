@@ -1,0 +1,146 @@
+body {
+    background-image: url("../images/qmark.jpg");
+    background-size: 100%;
+    color: white;
+}
+
+
+header {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+}
+
+.btn {
+    position: relative;
+    height: 30px;
+    width: 120px;
+}
+
+.ans-list {
+    list-style-type: none;
+}
+
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 36px;
+    align-items: center;
+}
+
+.countdown {
+    height: 45px;
+    width: 45px;
+    background-color: black;
+    font-size: 24px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: right;
+}
+
+.flex-left {
+    padding: 5px;
+    flex: 1;
+}
+
+.card-column {
+    flex: 1 0 75%;
+    border: 2px solid white;
+
+}
+
+.quiz-questions {
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+    min-height: 300px;
+    flex: 1;
+    opacity: .7;
+}
+
+.highscores-table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    border: 2px solid white;
+    background-color: black;
+    opacity: .7;
+}
+
+
+.table-head{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    text-align:center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}   
+
+.score-head{
+    font-size: 16px;
+    font-weight: bold;
+    flex: 1;
+    width: auto;
+    border: 1px solid white;
+}
+
+.table-columns {
+    display: flex;
+    width:100%;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+}
+
+.table-rows {
+    display: flex;
+    width:100%;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+}
+
+.score {
+    border: 1px solid white;
+    flex:   1;
+    text-align: center;
+}
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+    /* on tablets -> desktops, set high scores table to center below the questions. */
+    
+    .row{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .highscores-table {
+      align-items: center;
+    }
+    .flex-left {
+        padding: 5px;
+        flex: 75%;
+    }
+}

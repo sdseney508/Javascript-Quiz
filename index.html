@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="reset sheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- will only have the heading for the quiz, the start button and the timer. -->
+        <h1>Javascript Quiz</h1>
+        <section class="startbtn">
+            <button class="btn" id="start">Start</button>
+        </section>
+
+        <section class="timer">
+            Time Remaining
+            <div id="timercountdown"></div>
+        </section>
+    </header>
+
+    <main>
+        <!-- setting up a flex grid with flexbox -->
+        <section class="row">
+            <!-- flexbox styling with two boxes across on full screen size.  one box has the quiz and questions, the other keeps the high score list.
+            On full size screens, they are side by side, on smaller screens the quiz and questions go on top, high scores goes below -->
+            <section class="quiz-questions flex-left">
+                <div id="question"></div>  
+                <div class="ans-list" id="options"></div> 
+                <!-- <ul class="ans-list" id="options"></ul> -->
+            </section>
+
+            <section class="highscores-table">
+                <div>
+                    <button class="resestscores" id="resetbtn" style="opacity: 1;">Reset High Scores</button>
+                </div>
+
+                <div class="table-head">
+                    <div class="score-head">
+                        Initials
+                    </div>
+                    <div class="score-head">
+                        Number Correct
+                    </div>
+                    <div class="score-head">
+                        Timer
+                    </div>
+                </div>
+                <div class="table-columns" id="score-rows"></div>
+
+            </section>
+        </section>
+    </main>
+
+
+    <!-- <footer>
+
+
+    </footer> -->
+
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
