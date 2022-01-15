@@ -24,7 +24,7 @@ Generates a random 25 question javascript quiz based on a stored question bank. 
 
 
 ## Installation
-Run the application from the following URL: 
+Run the application from the following URL: https://sdseney508.github.io/Javascript-Quiz/
 
 ## Usage
 No restrictions on the usage of this quiz.

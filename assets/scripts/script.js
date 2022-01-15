@@ -163,13 +163,6 @@ var qlist = [
     D: 'None of the above' },
     Ans: 'A' },
 
-    {Question:' If para1 is the DOM object for a paragraph, what is the correct syntax to change the text within the paragraph?',
-    Answers: {A: '"New Text"?',
-    B: 'para1',
-    C: 'para1',
-    D: 'para1' },
-    Ans: 'B' },
-
     {Question:'JavaScript entities start with _______ and end with _________',
     Answers: {A: 'Semicolon, colon',
     B: 'Semicolon, Ampersand',
@@ -364,11 +357,6 @@ var qlist = [
     D: ' None of the above' },
     Ans: 'A' },
 
-    {Question:' In JavaScript, Window',
-    Answers: {A: ' False',
-    B: ' True'},
-    Ans: 'A'
-    }
 ];
 
 //keeping it simple:
