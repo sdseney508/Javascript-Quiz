@@ -156,7 +156,7 @@ var qlist = [
     D: 'var txt = new Array="tim","kim","jim"' },
     Ans: 'C' },
 
-    {Question:'What does the <noscript> tag do?',
+    {Question:'What does the \<noscript> tag do?',
     Answers: {A: 'Enclose text to be displayed by non-JavaScript browsers',
     B: 'Prevents scripts on the page from executing',
     C: 'Describes certain low-budget movies',
@@ -488,7 +488,7 @@ function checkAnswer(){
     }
 
     //check for end of question file
-    if (counter === 5){
+    if (counter === 25){
     }
     else {
         playGame(questionnumbers);
@@ -543,29 +543,6 @@ function setScore(intl,n_corr,timeleft){
     //remake the highscores table
     makeHighScoreTable(highscores);
     endGame();
-}
-
-function startTimer() {timerInterval = setInterval(function(){    
-    timeremain--;
-    timer.innerHTML = timeremain;
-    if (counter == 5){
-        clearInterval(timerInterval);
-        setScore(initials, n_corr, timeremain);
-        choices.innerHTML = "";
-        questions.innerHTML = "";
-        timer.innerHTML = "";
-        return;
-    }
-    else if (timeremain <= 0) {
-        // if they ran out of time, kill the timer and go to the setscore function.
-        clearInterval(timerInterval);
-        setScore(initials, n_corr, 0 );
-        choices.innerHTML = "";
-        questions.innerHTML = "";
-        timer.innerHTML = "";
-        return;
-    }
-}, 1000);
 }
 
 function endGame() {
